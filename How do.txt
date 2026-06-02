@@ -1,0 +1,129 @@
+﻿You are an expert frontend developer. Build a complete, production-ready web frontend for a School Management System based on the detailed requirements below.
+
+IMPORTANT:
+- ONLY the web frontend (Vue 3).
+- NO mobile app (Flutter) – skip that.
+- NO backend implementation – use mock APIs (MSW or simple in-memory fetch mocks) for all data.
+- Implement ALL features listed in the README that have a UI (forms, tables, dashboards, reports, charts, etc.). Use mock data that demonstrates every feature.
+- The frontend must be fully responsive (desktop, tablet, mobile) and support RTL Persian and LTR English (use vue-i18n if possible).
+- Use modern stack: Vue 3 (Composition API), TypeScript, Pinia, Vue Router, Vite.
+- UI: Tailwind CSS + PrimeVue (or Vuetify 3) – choose whichever makes development faster.
+- All dashboards must be role-based: Admin, Teacher, Parent, Student, Cultural Officer (پرورشی), Bus Driver.
+- Include a multi-tenant school switcher (at least 2 mock schools with different logos/names).
+- Authentication mock: login page with email/password and role selection, plus mock 2FA (simple code 123456).
+- All forms must have validation and mock submission with success/error toasts.
+- Generate realistic mock data for: 2 schools, 3 academic years, 4 grades, 5 classes per grade, 20 students, 10 teachers, 5 parents, 5 bus drivers, 5 cultural events, 10 finance items, etc. Enough to demonstrate all features.
+- Implement the following modules fully (as listed in the README). For each module, create pages, components, and mock API services:
+
+### Full feature list to implement (from the README):
+
+1. Core:
+   - Multi-tenant school switcher (dropdown in navbar).
+   - Role-based layouts and permissions.
+   - User profile with 2FA toggle (mock).
+
+2. Admission & Registration:
+   - Online registration form with document upload (mock file).
+   - Registration status page (pending, approved, waitlist).
+   - Ranking and capacity management (mock).
+
+3. Academics & Classroom:
+   - Course definition, weekly schedule (interactive timetable).
+   - Digital gradebook (attendance, grades, behavior notes).
+   - Homework system: create, submit (mock), review.
+   - Report card generation (standard/descriptive) – show mock report card.
+
+4. Exam Management:
+   - Question bank (CRUD for question types: multiple choice, essay, fill-in).
+   - Online exam creation, scheduling, auto-grading (mock results).
+   - Exam result analytics (charts for average, distribution).
+
+5. Disciplinary Record:
+   - Add disciplinary actions (warning, suspension, reward).
+   - Disciplinary committee minutes upload (mock).
+   - Automatic discipline score display in report card.
+
+6. Counseling Management:
+   - Counseling profile per student.
+   - Session records.
+   - Academic guidance (9th to 10th grade suggestions based on mock grades).
+
+7. Educational Content:
+   - Upload content (PDF, video, PPT) by teacher.
+   - Categorize by subject/grade.
+   - Student view/download.
+
+8. Communication:
+   - Internal messaging (individual/group chat, read receipts).
+   - Announcements with priority, expiry, read confirmation.
+   - Support ticket system with SLA and satisfaction survey.
+   - Parent-Teacher meeting management (invitations, minutes).
+
+9. Finance & Accounting:
+   - Fee items (fixed/variable), discounts, installments.
+   - Payment methods (cash, card, check, online mock).
+   - Debtor list and report card blocking indicator.
+   - School expenses, budget, income/expense reports.
+   - Certificates (enrollment, graduation, transcript).
+
+10. Service Modules:
+    - Library: book management, borrowing, fines, reservations.
+    - School Bus: routes, student assignment, delay notification, boarding confirmation.
+    - Inventory & Assets: QR code asset tracking, repair requests.
+    - Health: vaccinations, periodic exams, contagious disease tracking.
+    - Canteen: products, cash/electronic wallet purchases, sales reports.
+
+11. Event Participation (Cultural):
+    - Define events (religious, cultural, sports) with capacity.
+    - Attendance recording (QR code mock, smart card mock).
+    - Calculate cultural activity score, class rankings.
+    - Digital consent forms and graphical invitations.
+
+12. Standard Reports & Executive Management:
+    - Admin dashboard with statistics cards and charts (revenue, attendance, top performers).
+    - Reports: student lists, grade sheets, attendance summary, financial reports.
+    - Mock integration with external systems (SENAD, SHAD, etc.) – just show export/import buttons.
+
+13. Infrastructure & Security (frontend simulation):
+    - Mock backup notification, log viewer (basic).
+
+14. AI Smart Reports (frontend demo):
+    - Student dashboard with grade trend chart, heatmap of subjects, grade prediction (mock AI).
+    - Teacher ranking (performance metrics mock).
+    - Dropout risk indicator (mock).
+
+15. School Portal / Website:
+    - Public pages: About Us, News, Gallery, Contact.
+    - Content management (mock editing).
+
+16. Form Builder:
+    - Drag-and-drop form builder (simple UI) with predefined templates.
+    - Publish forms, collect responses, export Excel (mock).
+
+17. Survey & Evaluation:
+    - Teacher evaluation by students/parents (mock forms).
+    - Event and service surveys.
+
+18. Consent & Permission System:
+    - Digital consent forms for trips, photo usage, medical emergency.
+    - Parent digital signature (mock), PDF output.
+
+19. Notification Engine:
+    - Mock notifications via SMS, Push, Email, Internal – just show notification list and settings.
+
+20. Rule Engine:
+    - If-Then rule builder UI (e.g., absence > 5 days → send SMS).
+    - Predefined rules with mock execution.
+
+21. Document Archive:
+    - Document upload, tagging, version control, OCR mock search.
+
+### Deliverables:
+- Complete code for the entire Vue 3 project.
+- Instructions to run (npm install, npm run dev).
+- All mock services in a separate folder (src/mocks or src/services/mock).
+- Fully functional with no backend required.
+
+Start by creating the project structure, then implement authentication and the admin dashboard first. Then add all other modules one by one. Provide the full code in your response (organized in files). Do not skip any major module – at least implement a working UI with mock data for each feature mentioned above.
+
+Now, begin. Write the entire frontend code.
